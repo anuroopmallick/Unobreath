@@ -2,16 +2,21 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div>
-      <div className="h-screen w-full background-cover bg-center flex items-center justify-center">
+    <div className="flex flex-col">
+      <div className="h-[50rem] w-full background-cover bg-center flex items-center justify-center">
         <img
           src="/images/Deepdive4.jpg"
           className="object-cover h-full w-full"
           alt="header-image"
         ></img>
+        <button
+          onChange={() => {
+            alert();
+          }}
+        ></button>
       </div>
-      <div className="w-full p-11 flex flex-col justify-center items-center">
-        <div className="container lg:px-60">
+      <div className="w-full p-4 flex flex-col justify-center items-center my-6 transiton-transform duration-300 ease-in-out translate-y-0">
+        <div className="container xl:px-60">
           <h3 className="text-3xl font-medium mx-auto text-center">
             Unlock the Depths of Your Potential with your favourite instructor
           </h3>
@@ -21,7 +26,7 @@ const Home = () => {
               <span className="text-blue-700">freediving</span>
             </em>
           </div>
-          <p className="text-center text-gray-500 text-lg">
+          <p className="text-justify text-gray-500 text-lg">
             Welcome to Unobreath Freediving! Whether you're a beginner or
             seasoned diver, my personalized training programs are designed to
             help you achieve depths of up to 30 meters and breath-holds
@@ -35,46 +40,46 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="relative bg-center h-[60rem] md:h-[52rem] bg-cover ">
+      <div className="relative bg-center h-[52rem] bg-cover flex items-center">
         <img
           src="/images/discovery.jpg"
           className="object-cover h-full w-full"
         ></img>
-        <div className="absolute top-0 left-0 z10 h-full w-full flex justify-center items-center">
-          <div className="backdrop-blur-xl bg-center w-5/6 h-full md:h-5/6 flex flex-col justify-around text-white">
+        <div className="absolute top-0 left-0 z10 h-full my-auto w-full flex justify-center items-center">
+          <div className="backdrop-blur-xl bg-center w-5/6 h-min flex flex-col justify-around text-white">
             <p className="text-4xl font-semibold text-white text-center my-8">
               Why choose Us ?
             </p>
-            <div className="flex flex-col md:flex-row grow justify-around items-center">
-              <div className="size-60 md:size-80 text-center flex flex-col  border-box border-white border-2 rounded-md md:justify-center md:px-2">
-                <h1 className="text-2xl font-serif font-semibold md:pb-4">
+            <div className="flex flex-col h-min md:flex-row grow justify-around items-center mb-8 space-y-4 md:space-y-0 md:space-x-4">
+              <div className="size-52 md:size-70 xl:size-80 text-center flex flex-col justify-center  border-box border-white border-2 rounded-md  md:px-2">
+                <h1 className="text-md lg:text-xl font-serif font-semibold md:pb-4">
                   Personalized Coaching
                 </h1>
 
-                <p className="text-center text-lg">
+                <p className="text-justify text-sm px-2 xl:text-lg">
                   We tailor our lessons to your need, focusing on your unique
                   goals and comfort level.
                 </p>
               </div>
 
-              <div className="size-60 md:size-80 text-center flex flex-col border-box border-white border-2 rounded-md md:justify-center md:px-2">
-                <h1 className="text-2xl font-serif font-semibold md:pb-4">
+              <div className="size-52 md:size-70 xl:size-80 text-center flex flex-col justify-center border-box border-white border-2 rounded-md  md:px-2">
+                <h1 className="text-md lg:text-xl font-serif  font-semibold md:pb-4">
                   Proven Results
                 </h1>
 
-                <p className="text-center text-lg">
+                <p className="text-justify text-sm xl:text-lg px-2">
                   With years of experience, we’ve helped students achieve
                   remarkable milestones, including improved breath-holding
                   capacity and enhanced underwater endurance.
                 </p>
               </div>
 
-              <div className="size-60 md:size-80 text-center flex flex-col border-box border-white border-2 rounded-md md:justify-center md:px-2">
-                <h1 className="text-2xl font-serif font-semibold md:pb-4">
+              <div className="size-52  md:size-70 xl:size-80 text-center flex flex-col justify-center border-box border-white border-2 rounded-md  md:px-2">
+                <h1 className="text-md lg:text-xl font-serif font-semibold md:pb-4">
                   Unleashing Growth Potential
                 </h1>
 
-                <p className="text-center text-lg">
+                <p className="text-justify text-sm px-2 xl:text-lg">
                   We focus on personal development, mental clarity, and physical
                   resilience. You'll leave each session with increased
                   confidence, inner peace, and strength.
@@ -89,7 +94,7 @@ const Home = () => {
           <h3 className="text-3xl font-medium mx-auto text-center mb-4">
             Experience Tranquility
           </h3>
-          <p className="text-center text-gray-500 text-lg">
+          <p className="text-center text-gray-500 text-sm ">
             Imagine holding your breath, feeling weightless, and sinking
             effortlessly into the vastness of the ocean. Free diving offers more
             than just the ability to dive deeper. It's an experience that brings
@@ -162,7 +167,7 @@ const Home = () => {
             </li>
             <li>
               <a href="#contact" className="hover:text-gray-400">
-                Contact
+                +91 7410095842
               </a>
             </li>
           </ul>
@@ -194,40 +199,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// <div className="flex flex-col h-full justify-evenly items-center text-white">
-//   <p className="text-4xl font-semibold text-white text-center mt-4">
-//     Why choose Us ?
-//   </p>
-//   <div className="max-h-full flex flex-col justify-evenly items-center">
-//     <div className="size-60 text-center flex flex-col border-box border-white border-2 rounded-md">
-//       <h1 className="text-2xl font-serif font-semibold">
-//         Personalized Coaching
-//       </h1>
-//       <p className="text-center text-lg">
-//         We tailor our lessons to your need, focusing on your unique
-//         goals and comfort level.
-//       </p>
-//     </div>
-//     <div className="size-60 text-center flex flex-col border-box border-white border-2 rounded-md">
-//       <h1 className="text-2xl font-serif font-semibold">
-//         Proven Results
-//       </h1>
-//       <p className="text-center text-lg">
-//         With years of experience, we’ve helped students achieve
-//         remarkable milestones, including improved breath-holding
-//         capacity and enhanced underwater endurance.
-//       </p>
-//     </div>
-//     <div className="size-60 text-center flex flex-col border-box border-white border-2 rounded-md">
-//       <h1 className="text-2xl font-serif font-semibold">
-//         Unleashing Growth Potential
-//       </h1>
-//       <p className="text-center text-lg">
-//         We focus on personal development, mental clarity, and
-//         physical resilience. You’ll leave each session with
-//         increased confidence, inner peace, and strength.
-//       </p>
-//     </div>
-//   </div>
-// </div>;
