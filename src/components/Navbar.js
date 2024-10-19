@@ -60,13 +60,13 @@ const Navbar = () => {
             >
               Home
             </Link>
-            <Link
+            {/* <Link
               to={"/products"}
               onClick={closeMobileMenu}
               className="py-6 transition-all duration-300 ease-in-out  hover:shadow-md hover:bg-gray-300"
             >
               Products
-            </Link>
+            </Link> */}
             <Link
               to={"/services"}
               onClick={closeMobileMenu}
@@ -74,13 +74,13 @@ const Navbar = () => {
             >
               Courses
             </Link>
-            <Link
+            {/* <Link
               to={"/products"}
               onClick={closeMobileMenu}
               className="py-6 transition-all duration-300 ease-in-out  hover:shadow-md hover:bg-gray-300"
             >
               Products
-            </Link>
+            </Link> */}
             <Link
               onClick={closeMobileMenu}
               className="py-6 transition-all duration-300 ease-in-out  hover:shadow-md hover:bg-gray-300"
@@ -98,11 +98,11 @@ const Navbar = () => {
             Home
           </Link>
           <Link to={"/services"} onClick={closeMobileMenu}>
-            Services
+            Courses
           </Link>
-          <Link to={"/products"} onClick={closeMobileMenu}>
+          {/* <Link to={"/products"} onClick={closeMobileMenu}>
             Products
-          </Link>
+          </Link> */}
         </div>
       </div>
     </nav>
